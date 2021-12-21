@@ -55,7 +55,7 @@ li{
 }
 
 .hover-nav{
-    border: 2px outset rgb(160, 130, 70);
+    border: 3px outset rgb(160, 130, 70);
     padding: 7%;
     margin: 2px;
     background-image: linear-gradient( to left ,black, rgb(24, 24, 24) );
@@ -82,7 +82,7 @@ li{
 .buscar{
     padding: 7%;
     margin: 2px;
-    border: 2px inset rgb(160, 130, 70);
+    border: 3px inset rgb(160, 130, 70);
     background-image: linear-gradient( to left ,black, rgb(24, 24, 24) );
     color: white;
     border-radius: 50px;
@@ -214,4 +214,71 @@ li{
 footer{
     text-align: center;
     background: black;
+}
+
+@media(max-width: 500px){
+    /* header */
+    .logo-header img{
+        width: 2em;
+    }
+    li{
+        list-style: none;
+        width: 10em;
+    }
+    .hover-nav{
+        border: 2px outset rgb(160, 130, 70);
+        padding: 0.3em;   
+    }
+    .header ul{
+        padding: 0.5em;
+    } 
+    .buscar{
+        padding: 0.5em;
+        margin: 0.1em;
+    }
+    /* destacado */
+    .destacado{
+        width: 20em;
+    }
+    /* productos */
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(6, 17em);
+        gap: 25px 10px;
+    }
+    .grid-item{
+        padding: 10px;
+        overflow: hidden;
+    }
+    .producto img{
+        width: 6em;
+        margin: 3px;
+    }
+    /* contacto */
+    #contacto{
+        padding: 10px;
+        text-align: center;
+    }
+    #contacto input{
+        margin: 5px;
+        padding: 0.7em;
+        width: 80%;
+    }
+    #contacto textarea{
+         margin: 5px;
+         padding: 0.5em;
+         height: 7em;
+         width: 80%;
+     }
+     .btn-enviar{
+        margin: 5px;
+        width: 25%;
+        height: 3em;
+        
+      }
+      .imag-contacto{
+        width: 10%;
+        background-color: white;
+    } 
 }
