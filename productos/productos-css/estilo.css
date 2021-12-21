@@ -216,7 +216,7 @@ footer{
     background: black;
 }
 
-@media(max-width: 500px){
+@media(max-width: 700px){
     /* header */
     .logo-header img{
         width: 2em;
